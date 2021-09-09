@@ -2,6 +2,8 @@
 Task 1:
 Web Development internship at The Sparks Foundation, this repository contains the source code for a dynamic website used as a basic banking system. Built using HTML, CSS, Javascript, PHP and MySQL, it allows the user to perform monetary transactions and keep a track of their banking activities. 
 
+demo - https://gripspark073.000webhostapp.com/
+
 # Features
 
 Built according to the following prompt, the website for APOD Bank has modules such as user account summary, beneficiary management and transaction handling.
