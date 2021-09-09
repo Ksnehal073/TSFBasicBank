@@ -1,0 +1,1110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    overflow-x: unset;
+}
+
+/******** Reuseable Tag ********/
+
+:root {
+    --primary-color: #2196F3;
+    --secondary-color: #222;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--secondary-color);
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+section {
+    padding: 30px 60px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.title::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 50px;
+    height: 3px;
+    margin-top: 10px;
+    left: 48%;
+    background-color: var(--primary-color);
+}
+
+.color {
+    color: var(--primary-color);
+}
+
+/******Header Section********/
+
+.container {
+    position: relative;
+    top: 80px;
+    height: 87.5vh;
+    margin-top: 60px;
+    background-color: #f9f9f9;
+}
+
+.text-container, aside {
+    padding: 50px;
+}
+
+.text-container {
+    height: 100%;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/main.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+aside {
+    width: 30%;
+    background-color: #3E505D;
+}
+
+.main-text {
+    background-color: #FFFFFF;
+    width: 491.917px;
+    height: 237.15px;
+    position: absolute;
+    padding: 40px 30px;
+    top: 150px;
+}
+
+.main-text h1, .main-text p {
+    margin-bottom: 20px;
+    word-spacing: 2px;
+}
+
+.main-text h1 {
+    letter-spacing: 1px;
+}
+
+.main-text button {
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color);
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 95%;
+    margin: auto;
+}
+
+/*******Navigation-Bar***********/
+
+nav {
+    background-color: black;
+    padding: 20px 0;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 455;
+}
+
+.logo {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.nav-container {
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    max-width: 1200px;
+}
+
+.main-nav {
+    display: flex;
+}
+
+.main-nav li, .side-nav li {
+    list-style: none;
+}
+
+.main-nav a, .side-nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.main-nav a.border-link {
+    color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    padding: 4px 9px;
+}
+
+.main-nav a.no-border-link {
+    margin-top: 5px;
+    position: relative;
+}
+
+.main-nav li:after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 2px;
+    margin-top: 2px;
+    background-color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+.main-nav li:hover:after {
+    width: 100%;
+}
+
+.main-nav .white {
+    color: white !important;
+    background-color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.main-nav .no-border:hover:after {
+    width: 0;
+}
+
+.main-nav .blue {
+    color: white !important;
+}
+
+.main-nav .blue:hover {
+    background-color: var(--primary-color);
+}
+
+.sign-up:hover {
+    background-color: #247ec9;
+}
+
+/*************Mobile-Navigation*************/
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 999;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.side-nav {
+    text-align: center;
+    margin-top: -125px;
+}
+
+.side-nav li {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.side-nav li a {
+    font-size: 20px;
+}
+
+.side-nav li a:active {
+    color: var(--primary-color);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+}
+
+.close i {
+    color: white;
+}
+
+.bars {
+    display: none;
+    font-size: 25px;
+}
+
+.bars a {
+    color: white;
+}
+
+/*************** Aside ************/
+
+.para h2, .para p {
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.para p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.para h2 {
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.para.first {
+    margin-bottom: 50px;
+}
+
+.para.second {
+    margin-top: 40px;
+}
+
+.side-text {
+    margin-top: 50px;
+}
+
+/***********Section-About********************/
+
+section.about {
+    padding: 30px 0;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+section.about .about-text p {
+    max-width: 900px;
+    line-height: 21px;
+    margin: 40px auto;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-align: center;
+}
+
+section.about .about-container .box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.about .about-container .box-container .box {
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 20px 20px;
+    width: 280px;
+    height: 280px;
+    text-align: center;
+}
+
+section.about .about-container .box-container .box h2, section.about .about-container .box-container .box p {
+    font-weight: 300;
+}
+
+section.about .about-container .box-container .box i {
+    color: var(--primary-color);
+    font-size: 55px;
+}
+
+section.about .about-container .box-container .box h2 {
+    margin-top: 20px;
+}
+
+section.about .about-container .box-container .box p {
+    margin-top: 10px;
+}
+
+section.about .about-container .box-container .box:hover {
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+}
+
+.bank-desc {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.bank-desc .bank-desc-content {
+    margin-left: 20px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
+.bank-desc img {
+    width: 300px;
+    height: 300px;
+}
+
+/**************Section-founder-info***************/
+
+.owner-info {
+    background-color: #f9f9f9;
+    padding-bottom: 100px;
+}
+
+.owner-info-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.owner-info .title h1 {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.owner-info-container .owner-img img {
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.owner-info-text {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.owner-info-text h2 {
+    margin-bottom: 10px;
+}
+
+.owner-info-text span {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.owner-info-text .owner-info-para {
+    margin-top: 15px;
+}
+
+.owner-info-text .owner-info-para p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+/************Dashboard php**********/
+
+.dashboard {
+    height: 82.5vh;
+    background-color: #ebd5d5;
+    margin-top: 74px;
+    display: flex;
+}
+
+.side-bar {
+    height: 100%;
+    width: 20vw;
+    position: fixed;
+    background-color: #2F3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-bar ul {
+    text-align: center;
+    margin-top: -150px;
+}
+
+.side-bar li {
+    display: block;
+    margin-top: 40px;
+    text-transform: uppercase;
+    width: 20vw;
+}
+
+.side-bar li i {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.side-bar li a {
+    display: inline-block;
+    padding: 20px 0;
+    text-decoration: none;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.side-bar li:hover {
+    background-color: var(--primary-color);
+}
+
+.main-bank-content {
+    background-color: #c5c2c2;
+    height: 85vh;
+    width: 80vw;
+    margin-left: 20vw;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/******Users Section*******/
+
+.users {
+    padding: 0 10% 36px 10%;
+    margin: 57px auto 0;
+}
+
+.table-user {
+    margin-top: -20px;
+    width: 100%;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+}
+
+.table-user th {
+    background-color: var(--primary-color);
+}
+
+.table-user thead tr th {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fafafa;
+    letter-spacing: 0.35px;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+}
+
+.table-user thead tr td {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+tr {
+    background-color: #fafafa;
+}
+
+td, th {
+    padding: 13px 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+.table-user a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 20px;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.table-container {
+    margin-top: 50px;
+}
+
+/********Transfer-funds************/
+
+.transfer-button {
+    margin: 40px 0 20px 0;
+    text-align: center;
+}
+
+.transfer-button input {
+    border: 2px solid #2f3640;
+    color: #2f3640;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: all 0.5s;
+}
+
+.transfer-button input:hover {
+    background-color: var(--primary-color);
+}
+
+.transfer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.transfer {
+    margin-top: 10vh;
+}
+
+.transfer h2 {
+    margin: 10px 0;
+}
+
+.send-item {
+    margin-top: 60px;
+}
+
+.amount {
+    margin-top: 55px;
+}
+
+.amount input::-webkit-outer-spin-button, .amount input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.amount input[type=number] {
+    -moz-appearance: textfield;
+    background-color: #dbd2d2;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.transfer h1 {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.table-transfer {
+    width: 720px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/***********Select option Design****************/
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 350px;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    background-color: #2F3640;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 20px rgba(20, 20, 30, 0.25);
+    overflow: visible;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select option {
+    background-color: #2F3640;
+    letter-spacing: 1.2px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.selected {
+    display: none;
+}
+
+/*********Transfer history ***********/
+
+/************Footer-section **********/
+
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 21;
+}
+
+footer, .footer {
+    background-color: black;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+
+footer h4, .footer h4 {
+    font-weight: 300;
+    font-size: 14px !important;
+}
+
+.search-box {
+    position: fixed;
+    left: 22%;
+    top: 78px;
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 0px;
+    z-index: 645;
+}
+
+.search-box a {
+    text-decoration: none;
+}
+
+.search-box:hover>.searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-btn {
+    color: var(--primary-color);
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box .searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    margin-left: 20px;
+    color: white;
+    font-size: 16px;
+    transition: 0.5s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.summary {
+    height: 83vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/summary.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-size: contain;
+    color: rgb(233, 229, 229);
+}
+
+.summary ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.summary li {
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.summary li span {
+    color: var(--primary-color);
+}
+
+/*********Media queries ***********/
+
+@media only screen and (max-width:1200px) {
+    .nav-container {
+        padding: 0 20px;
+    }
+    .text-container, aside {
+        padding: 20px;
+    }
+    .main-text {
+        padding: 33px 22px;
+    }
+    section.about .about-container .box-container .box {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    header {
+        flex-direction: column;
+        width: 95%;
+    }
+    .text-container {
+        padding-bottom: 400px;
+        width: 100%;
+    }
+    .container {
+        margin-top: 20px;
+    }
+    .main-text {
+        padding: 33px 22px;
+    }
+    aside {
+        width: 100%;
+    }
+    aside .side-text {
+        display: flex;
+        margin-top: 10px;
+    }
+    aside .side-text .para {
+        flex: 1;
+    }
+    aside .side-text .first {
+        margin: 0;
+        margin-right: 50px;
+    }
+    aside .side-text .second {
+        margin-left: 50px;
+        margin-top: 0px;
+    }
+    #about {
+        margin-top: 250px;
+    }
+    .bank-desc {
+        flex-direction: column;
+        padding: 30px 10px;
+        width: 100%;
+    }
+    .bank-desc img {
+        width: 200px;
+        height: 200px;
+    }
+    .bank-desc .bank-desc-content {
+        font-size: 18px;
+        line-height: normal;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:969px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:968px) {
+    .users {
+        padding: 0 1%;
+        margin: 72px auto 0;
+    }
+    .dashboard {
+        margin-top: 73px;
+    }
+    .side-bar li a {
+        font-size: 12px;
+    }
+    .main-nav a, .side-nav a {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+    section.about .about-text p {
+        width: 90%;
+    }
+    #about {
+        margin-top: 250px;
+    }
+    .para h2 {
+        font-size: 16px;
+    }
+    .para p {
+        font-size: 14px;
+    }
+    .search-box {
+        left: 20vw;
+        top: 72px;
+        width: 100%;
+        height: 40px;
+        border-radius: 0px;
+        padding: 0px;
+    }
+    .search-box a {
+        text-decoration: none;
+    }
+    .search-box>.searchInput {
+        border: none;
+        width: 100%;
+        background-color: #635065;
+        padding: 0 5px;
+        margin-left: 0;
+    }
+    .search-box:hover>.searchInput {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    td {
+        text-align: end;
+    }
+    tr:nth-child(even) {
+        background-color: #628ce7;
+        color: white;
+    }
+    tr:nth-child(even) a {
+        background-color: #2f3640;
+    }
+    .table-user thead {
+        display: none;
+    }
+    .user-title:before {
+        content: "Users Details";
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-left: 15px;
+        font-size: 25px;
+        margin: auto;
+    }
+    .table-user, .table-user tbody, .table-user tr, .table-user td {
+        display: block;
+        width: 100%;
+    }
+    .table-user tr {
+        margin-bottom: 15px;
+        padding: 0 2%;
+    }
+    .table-user thead tr td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border: 1px solid black;
+    }
+    .users {
+        padding-bottom: 100px;
+    }
+    .table-user td:before {
+        content: attr(data-value);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 14px;
+        text-align: left;
+    }
+    .tableHistory td:before {
+        content: attr(data-value);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 14px;
+        text-align: left;
+    }
+    .table-transfer td:before {
+        content: attr(data-value);
+        position: absolute;
+        left: 5%;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 18px;
+        text-align: left;
+    }
+    .side-bar li span {
+        display: none;
+    }
+    .side-bar li {
+        margin: 30% 0;
+    }
+    .transfer-container {
+        flex-direction: column;
+    }
+    select {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:720px) {
+    .logo {
+        font-size: 20px;
+    }
+    aside .side-text {
+        display: flex;
+        flex-direction: column;
+    }
+    aside .side-text .first {
+        margin-bottom: 10px;
+    }
+    aside .side-text .second {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    #about {
+        margin-top: 200px;
+    }
+    section.about .about-container .box-container .box {
+        width: 90%;
+        height: 50%;
+        padding: 15px 0;
+    }
+    .transfer h1 {
+        font-size: 25px;
+    }
+    .transfer h2 {
+        font-size: 18px;
+    }
+    select {
+        font-size: 16px;
+    }
+    .transfer {
+        padding: 30px 5%;
+    }
+    .amount input[type="number"] {
+        width: 100%;
+    }
+    footer h4, .footer h4 {
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (max-width:560px) {
+    .main-nav {
+        display: none;
+    }
+    .bars {
+        display: block;
+    }
+    #about {
+        margin-top: 150px;
+    }
+    .main-text h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        letter-spacing: 0px;
+        font-weight: 500;
+    }
+    .main-text p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .main-text button {
+        font-size: 18px;
+        padding: 5px 10px;
+        width: 100%;
+    }
+    .main-text {
+        width: 100%;
+        height: 45%;
+        padding: 15px;
+        top: 210px;
+        background-color: #ddcfcf;
+    }
+    aside .side-text .para h2 {
+        margin: 10px;
+    }
+    .text-container {
+        padding: 0;
+        padding-bottom: 274px;
+    }
+    aside {
+        margin-top: 80px;
+    }
+    .dashboard {
+        margin-top: 68px;
+    }
+    .side-bar li i {
+        font-size: 20px;
+    }
+    .side-bar {
+        width: 15vw;
+    }
+    .main-bank-content {
+        margin-left: 15vw;
+        width: 85%;
+    }
+    .search-box {
+        left: 15vw;
+        top: 68px;
+    }
+    .summary h1 {
+        font-size: 18px;
+    }
+    .summary li {
+        font-size: 16px;
+    }
+    .summary ul {
+        top: 45%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .main-text {
+        height: 68%;
+    }
+    .main-text h1 {
+        font-size: 17px;
+    }
+    .main-text p {
+        font-size: 15px;
+    }
+    aside {
+        margin-top: 90px;
+        position: relative;
+        z-index: 54;
+    }
+    .about-text h1 {
+        font-size: 20px;
+    }
+    section.about .about-text p {
+        font-size: 14px;
+        line-height: 18px;
+        width: 95%;
+    }
+    section.about .about-container .box-container .box i {
+        font-size: 50px;
+    }
+    section.about .about-container .box-container .box h2 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    section.about .about-container .box-container .box p {
+        font-size: 15px;
+        margin: 10px auto 25px auto;
+    }
+    footer h4, .footer h4 {
+        font-size: 10px;
+    }
+}
